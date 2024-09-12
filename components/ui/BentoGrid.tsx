@@ -1,7 +1,8 @@
+"use client";
+
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-// Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
@@ -49,8 +50,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Express", "NodeJS"];
+  const rightLists = ["API", "PostgreSql", "TailwindCSS"];
 
   const [copied, setCopied] = useState(false);
 
@@ -64,7 +65,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "rohanbmyname@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -84,13 +85,13 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {img && (
-            <img
-              src={img}
-              alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
-            />
-          )}
+          {/* {img && ( */}
+          <img
+            src="public\b1.svg"
+            alt={img}
+            className={cn(imgClassName, "object-cover object-center ")}
+          />
+          {/* )} */}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
