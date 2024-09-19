@@ -30,7 +30,7 @@ const Hero = () => {
             words="Perfectly-coded software made available."
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I'm Rohan, a full stack web developer
+            Hi, I&apos;m Rohan, a full stack web developer
           </p>
 
           <a href="#about">
