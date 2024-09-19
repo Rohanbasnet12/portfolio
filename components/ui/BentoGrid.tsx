@@ -85,13 +85,13 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {/* {img && ( */}
-          <img
-            src="public\b1.svg"
-            alt={img}
-            className={cn(imgClassName, "object-cover object-center ")}
-          />
-          {/* )} */}
+          {img && (
+            <img
+              src="public\b1.svg"
+              alt={img}
+              className={cn(imgClassName, "object-cover object-center ")}
+            />
+          )}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
